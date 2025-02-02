@@ -56,8 +56,16 @@
                 <span id="typed"></span>
             </p>            
     <br><br><br><br><br><br>
-            <button class="btn btn-primary"><a href="galleria.html" style="color: aliceblue;">Saját Munkáim</a></button>  
-            <button class="btn btn-primary"><a href="galleria.html" style="color: rgb(240, 206, 214);">Foglalás Most</a></button>
+    <div class="col-sm-12 mt-3">
+        <div class="col-sm-6 mt-3">
+            <button class="btn btn-primary"><a href="galleria.html" style="color: aliceblue; border-color: gold;">Saját Munkáim</a></button>
+        </div>
+        <div class="col-sm-6 mt-3">
+            <button class="btn btn-primary"><a href="https://nincs-kft.reservio.com" style="color: rgb(0, 0, 0);">Foglalás Most</a></button>
+        </div>
+    </div>
+
+           
 
         </div>              
     </header><!-- end of page header -->
@@ -395,19 +403,6 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
     document.addEventListener('DOMContentLoaded', function() {
         var typed = new Typed('#typed', {
             strings: ["CseneNails Tulajdonos", "Körmös","Körömépítő","Körömdíszítő","Körömápoló"],
@@ -447,14 +442,6 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-    document.addEventListener('DOMContentLoaded', function() {
-        var typed = new Typed('#typed', {
-            strings: ["CseneNails Tulajdonos", "Körmös","Körömépítő","Körömdíszítő","Körömápoló"],
-            typeSpeed: 50,
-            backSpeed: 25,
-            loop: true
-        });
-    });
     document.addEventListener('DOMContentLoaded', function () {
         var swiper = new Swiper('.swiper-container', {
             loop: true,
