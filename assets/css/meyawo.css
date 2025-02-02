@@ -11208,7 +11208,7 @@ p {
   visibility: hidden;
   opacity: 0;
   background-image: -webkit-linear-gradient(bottom, #FFB6C1 0%, rgba(255, 209, 223, 0.7) 99%, rgba(225, 223, 100, 0.8) 100%);
-  background-image: linear-gradient(to top, #FFB6C1 0%, rgba(255, 209, 223, 0.7) 99%, rgba(255, 209, 223, 0.7) 100%);
+  background-image: linear-gradient(to top, #000 0%, rgba(255, 209, 223, 0.7) 99%, rgba(255, 209, 223, 0.7) 100%);
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
   width: 0;
@@ -11262,7 +11262,7 @@ p {
 
 .pricing-wrapper .pricing-card {
   display: block;
-  border: 1px solid #dee2e6;
+  border: 1px solid #FFFFFF;
   padding: 30px 15px;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -11271,7 +11271,7 @@ p {
   -webkit-flex-basis: 0;
       -ms-flex-preferred-size: 0;
           flex-basis: 0;
-  background: #fff;
+  background: #FFFFFF;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
 }
@@ -12231,4 +12231,7 @@ pre .code {
 
 .section-lg {
   padding: 100px 0 !important;
+}
+.dark-text {
+  color: #000; /* or any other dark color */
 }
