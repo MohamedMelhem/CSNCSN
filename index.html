@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
 	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#home">CseneNails</a>         
+            <a class="logo" href="#home">Csene<a style="color: black;" class="logo">Nails </a>         
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -53,16 +54,16 @@
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
-                <span class="up">Szia!</span>
-                <span class="down">Szinnyai Csenge vagyok</span>
+                <span >📍 Érd Körmös Szalon</span><br>
+                <span class="down">Szinnyai Csenge</span>
             </h1>
-            <p class="header-subtitle">FRONTEND WEB DESIGNER</p>            
-
-            <button class="btn btn-primary" ><a href="galleria.html" style="color: aliceblue;">Saját Munkáim</a></button>
+            <p class="header-subtitle">
+                <span id="typed"></span>
+            </p>            
+    
+            <button class="btn btn-primary"><a href="galleria.html" style="color: aliceblue;">Saját Munkáim</a></button>
         </div>              
     </header><!-- end of page header -->
-
-    <!-- about section -->
     <section class="section pt-0" id="about">
         <!-- container -->
         <div class="container text-center">
@@ -95,7 +96,6 @@
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
     </section> <!-- end of about section -->
-
     <!-- service section -->
     <section class="section" id="service">
         <div class="container text-center">
@@ -151,7 +151,7 @@
             <!-- row -->
             <div class="row">
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
+                    <a href="" class="portfolio-card">
                         <img src="assets/imgs/korom1.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
@@ -222,6 +222,26 @@
                         <img class="pricing-card-icon" src="assets/imgs/shipped.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Médium Körmök</h6>
+                        <div class="pricing-card-list">
+                            <p>Spa manikűr prémium csomag</p>
+                            <p>Körömfrancia prémium csomag</p>
+                            <p>quos neque</p>
+                            <p>fugiat quibusdam</p>
+                            <p>accusamus laboriosam</p>
+                            <p><i class="ti-close"></i></p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>HUF</span>
+                        <span>7500-8000</span>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/shipped.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="pricing-card-body">
                         <h6 class="pricing-card-title">Prémium Körmök</h6>
                         <div class="pricing-card-list">
                             <p>Spa manikűr prémium csomag</p>
@@ -233,31 +253,24 @@
                         </div>
                     </div>
                     <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>9.99/Month</span>
+                        <span>HUF</span>
+                        <span>7500-8000</span>
                     </div>
-                    <a href="https://nincs-kft.reservio.com/order?what=time" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-card-header">
                         <img class="pricing-card-icon" src="assets/imgs/startup.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">Premium</h6>
+                        <h6 class="pricing-card-title">Egyedi Köröm</h6>
                         <div class="pricing-card-list">
-                            <p>accusamus reprehenderit</p>
-                            <p>provident dolorem </p>
-                            <p>quos neque</p>
-                            <p>fugiat quibusdam</p>
-                            <p>accusamus laboriosam</p>
-                            <p>inventore omnis</p>
                         </div>
                     </div>
                     <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>99.9/Month</span>
+                        <span></span>
+                        <span>Megbeszélés Alapján</span>
                     </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+                    <a href="index.html#contact" class="btn btn-primary mt-3 pricing-card-btn">Felveszem A kapcsolatot</a>
                 </div>
 
             </div><!-- end of pricing wrapper -->
@@ -282,57 +295,50 @@
     </section> <!-- end of section -->
 
     <!-- testimonial section -->
-    <section class="section" id="testmonial">
+    <section class="section" id="testimonials">
         <div class="container text-center">
-            <p class="section-subtitle">Mit gondolnak rólam az ügyfelek?</p>
-            <h6 class="section-title mb-6">Testmonial</h6>
-
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                           
+            <h6 class="section-title mb-6">Vissza Jelzések</h6>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-img-holder">
+                                <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Testimonial Image">                        
+                            </div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                                <h6 class="testimonial-card-title">Emily Reb</h6>
+                            </div>
                         </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-img-holder">
+                                <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Testimonial Image">                        
+                            </div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                                <h6 class="testimonial-card-title">Emily Reb</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-img-holder">
+                                <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Testimonial Image">                        
+                            </div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                                <h6 class="testimonial-card-title">Emily Reb</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
-                        </div>
-                    </div>
-                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div> <!-- end of container -->
     </section> <!-- end of testimonial section -->
@@ -403,6 +409,16 @@
             },
         });
     </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var typed = new Typed('#typed', {
+            strings: ["CseneNails Tulajdonos", "Körmös","Körömépítő","Körömdíszítő","Körömápoló"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        });
+    });
+</script>
 
 </body>
 </html>
