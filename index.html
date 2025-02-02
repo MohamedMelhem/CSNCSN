@@ -58,7 +58,7 @@
             </h1>
             <p class="header-subtitle">FRONTEND WEB DESIGNER</p>            
 
-            <button class="btn btn-primary">Visit My Works</button>
+            <button class="btn btn-primary" ><a href="galleria.html" style="color: aliceblue;">Saját Munkáim</a></button>
         </div>              
     </header><!-- end of page header -->
 
@@ -311,6 +311,28 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div> <!-- end of container -->
     </section> <!-- end of testimonial section -->
@@ -365,6 +387,22 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
 </body>
 </html>
