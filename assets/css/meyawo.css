@@ -10875,6 +10875,10 @@ a.text-dark:hover, a.text-dark:focus {
 .text-reset {
   color: inherit !important;
 }
+.swiper-container {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 .visible {
   visibility: visible !important;
@@ -11259,7 +11263,18 @@ p {
   display: -webkit-flex;
   display: flex;
 }
+body {
+  overflow-x: hidden;
+}
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
 
+.swiper-slide {
+  flex: 0 0 auto;
+  width: 100%;
+}
 .pricing-wrapper .pricing-card {
   display: block;
   border: 1px solid #FFFFFF;

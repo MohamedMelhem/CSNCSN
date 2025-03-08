@@ -11,9 +11,11 @@
     <!-- Bootstrap + Meyawo main styles -->
 	<link rel="stylesheet" href="assets/css/meyawo.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <body style="overflow-x: hidden;">
 
     <!-- Page Navbar -->
 <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
@@ -56,14 +58,14 @@
                 <span id="typed"></span>
             </p>            
     <br><br><br><br><br><br>
-    <div class="col-sm-12 mt-3">
-        <div class="col-sm-6 mt-3">
-            <button class="btn btn-primary"><a href="galleria.html" style="color: aliceblue; border-color: gold;">Saját Munkáim</a></button>
-        </div>
-        <div class="col-sm-6 mt-3">
-            <button class="btn btn-primary"><a href="https://nincs-kft.reservio.com" style="color: rgb(0, 0, 0);">Foglalás Most</a></button>
-        </div>
+<div class="row mt-3">
+    <div class="col-6 d-flex justify-content-center">
+        <a href="galleria.html" class="btn btn-primary" style="color: aliceblue; border-color: gold;">Saját Munkáim</a>
     </div>
+    <div class="col-6 d-flex justify-content-center">
+        <a href="https://nincs-kft.reservio.com" class="btn btn-primary" style="color: rgb(0, 0, 0);">Foglalás Most</a>
+    </div>
+</div>
 
            
 
@@ -411,54 +413,23 @@
             loop: true
         });
     });
-    document.addEventListener('DOMContentLoaded', function () {
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-        });
-    });
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     var swiper = new Swiper('.swiper-container', {
+    //         loop: false,
+    //         overflow: false,
 
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    document.addEventListener('DOMContentLoaded', function () {
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-        });
-    });
+    //         pagination: {
+    //             el: '.swiper-pagination',
+    //             clickable: true,
+    //         },
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //     });
+    // });
+
+
 </script>
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
